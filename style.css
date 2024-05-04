@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap');
+/*cette propreté me sert sur la form du contanair*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+footer{
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    border-top-left-radius: 100px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    
+}
+
+/*propeté du texte Newsletter et le soulignement*/
+.footer-col h4{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 22px;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*propeté du nom et email du Newsletter */
+.footer-col input{
+    border: none;
+    width: 250px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin: 14px 0;
+}
+
+/*propeté du couleur du Newsletter */
+.footer-col .inputSubmit{
+    padding: 0px 20px;
+    background-color: #e91e64;
+    border: none;
+    color: white;
+}
+
+/*propeté du copyrithe*/
+.col p{
+    color: white;
+}
+
+@media (max-width: 600px){
+    footer .row{
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+
+    footer .footer-col{
+        
+        margin-top: 5%;
+    }
+    .footer-col input{
+        width: 100%;
+    }
+}
+
+/**css2*/
+
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    justify-content: center;
+ 
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+.footer-para{
+    max-width: 250px;
+    color: white;
+    text-align: justify;
+   
+
+}
+
+/**css3*/
+.underline{
+    width: 65%;
+    height: 3px;
+    position: relative;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    overflow: hidden;
+    
+}
+
+@media (max-width: 600px) {
+    .underline{
+        width: 33%;
+        height: 3px;
+        position: relative;
+        background-color: white;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        border-radius: 3px;
+        overflow: hidden;
+        
+    }
+}
+
+
+.underline span,.underline-vision span,.underline-reseaux-sociaux span{
+    width: 7px;
+    height: 100%;
+    position: absolute;
+    left: 10px;
+    background-color: rgb(63,63,63);
+    border-radius: 3px;
+    animation: moving 1.5s linear infinite;
+}
+
+@keyframes moving {
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+.underline-vision{
+    width: 25%;
+    height: 3px;
+    position: relative;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    overflow: hidden;
+    
+}
+
+@media (max-width: 600px) {
+    .underline-vision{
+        width: 13%;
+        height: 3px;
+        position: relative;
+        background-color: white;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        border-radius: 3px;
+        overflow: hidden;
+        
+    }
+}
+
+.underline-reseaux-sociaux{
+    width: 47%;
+    height: 3px;
+    position: relative;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    overflow: hidden;
+    
+}
+
+@media (max-width: 600px) {
+    .underline-reseaux-sociaux{
+        width: 35%;
+        height: 3px;
+        position: relative;
+        background-color: white;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        border-radius: 3px;
+        overflow: hidden;
+        
+    }
+}
